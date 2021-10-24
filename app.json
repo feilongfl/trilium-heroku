@@ -3,5 +3,6 @@
     "description": "Build your personal knowledge base with Trilium Notes",
     "repository": "https://github.com/feilongfl/trilium-heroku",
     "logo": "https://github.com/zadam/trilium/raw/master/images/app-icons/png/512x512.png",
-    "keywords": ["node", "trilium", "trilium-server"]
+    "keywords": ["node", "trilium", "trilium-server"],
+    "stack": "container"
 }
