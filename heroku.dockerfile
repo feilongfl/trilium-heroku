@@ -17,7 +17,7 @@ RUN set -x \
         make \
         nasm \
         libpng-dev \
-        python \
+        python3 \
         jq curl xz tar \
     && curl -L -e '; auto' `curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/zadam/trilium/releases/latest | jq -r '.assets[] | select(.name | startswith("trilium-linux-x64-server-")) | .browser_download_url'` | tar -Jxv --strip-components=1 \
     && cat package.json | grep -v electron > server-package.json \
